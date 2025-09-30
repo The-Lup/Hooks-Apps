@@ -85,10 +85,6 @@ useEffect(() => {
 }, []);
 ```
 
-
-
-> You can replace these placeholder images with actual screenshots of your components for a more attractive README.
-
 ## 🧪 Available Scripts
 
 * `npm run dev` – Start the development server.
