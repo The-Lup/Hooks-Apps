@@ -96,14 +96,6 @@ useEffect(() => {
 * `npm run lint` – Run ESLint to check code quality.
 * `npm run preview` – Preview the production build.
 
-## 🤝 Contributing
-
-If you want to add examples with other hooks or improve the documentation:
-
-1. Fork the repository.
-2. Create a branch (`git checkout -b feature/new-hook`).
-3. Commit your changes and push your branch.
-4. Open a Pull Request.
 
 ## 📄 License
 
