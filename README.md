@@ -6,17 +6,17 @@ Example repository for learning and practicing some React hooks.
 
 This project contains simple applications built with **React**, **TypeScript**, and **Vite**, focused on demonstrating the use of the following hooks:
 
-* `useState` – for local state management.
-* `useRef` – for referencing DOM elements and persistent values.
-* `useEffect` – for executing side effects when components mount, update, or unmount.
+- `useState` – for local state management.
+- `useRef` – for referencing DOM elements and persistent values.
+- `useEffect` – for executing side effects when components mount, update, or unmount.
 
 ## 🚀 Technologies
 
-* **React**
-* **TypeScript**
-* **Vite**
-* **Tailwind CSS**
-* **ESLint**
+- **React**
+- **TypeScript**
+- **Vite**
+- **Tailwind CSS**
+- **ESLint**
 
 ## 🛠 Installation
 
@@ -26,8 +26,6 @@ cd Hooks-Apps
 npm install
 npm run dev
 ```
-
-
 
 ## 📁 Project Structure
 
@@ -54,12 +52,8 @@ Simple counter using `useState`:
 ```tsx
 const [count, setCount] = useState(0);
 
-<button onClick={() => setCount(count + 1)}>
-  Increment: {count}
-</button>
+<button onClick={() => setCount(count + 1)}>Increment: {count}</button>;
 ```
-
-
 
 ### 2️⃣ useRef
 
@@ -73,8 +67,6 @@ useEffect(() => {
 }, []);
 ```
 
-
-
 ### 3️⃣ useEffect
 
 Example of an effect that runs when the component mounts:
@@ -85,17 +77,12 @@ useEffect(() => {
 }, []);
 ```
 
-
-
-> You can replace these placeholder images with actual screenshots of your components for a more attractive README.
-
 ## 🧪 Available Scripts
 
-* `npm run dev` – Start the development server.
-* `npm run build` – Generate an optimized production build.
-* `npm run lint` – Run ESLint to check code quality.
-* `npm run preview` – Preview the production build.
-
+- `npm run dev` – Start the development server.
+- `npm run build` – Generate an optimized production build.
+- `npm run lint` – Run ESLint to check code quality.
+- `npm run preview` – Preview the production build.
 
 ## 📄 License
 
