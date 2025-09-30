@@ -1,54 +1,110 @@
-# React + TypeScript + Vite
+# Hooks-Apps
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Example repository for learning and practicing some React hooks.
 
-Currently, two official plugins are available:
+## 📦 Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project contains simple applications built with **React**, **TypeScript**, and **Vite**, focused on demonstrating the use of the following hooks:
 
-## Expanding the ESLint configuration
+* `useState` – for local state management.
+* `useRef` – for referencing DOM elements and persistent values.
+* `useEffect` – for executing side effects when components mount, update, or unmount.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🚀 Technologies
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+* **React**
+* **TypeScript**
+* **Vite**
+* **Tailwind CSS**
+* **ESLint**
+
+## 🛠 Installation
+
+```bash
+git clone https://github.com/The-Lup/Hooks-Apps.git
+cd Hooks-Apps
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+## 📁 Project Structure
+
+```plaintext
+Hooks-Apps/
+├── public/
+├── src/
+│   ├── components/    # Reusable components
+│   ├── hooks/         # Custom hooks if any
+│   ├── App.tsx        # Main component
+│   └── main.tsx       # Entry point
+├── tailwind.config.js
+├── tsconfig.json
+├── vite.config.ts
+└── package.json
 ```
+
+## 🎨 Hook Mini Demos
+
+### 1️⃣ useState
+
+Simple counter using `useState`:
+
+```tsx
+const [count, setCount] = useState(0);
+
+<button onClick={() => setCount(count + 1)}>
+  Increment: {count}
+</button>
+```
+
+
+
+### 2️⃣ useRef
+
+Reference an input to focus it automatically:
+
+```tsx
+const inputRef = useRef<HTMLInputElement>(null);
+
+useEffect(() => {
+  inputRef.current?.focus();
+}, []);
+```
+
+
+
+### 3️⃣ useEffect
+
+Example of an effect that runs when the component mounts:
+
+```tsx
+useEffect(() => {
+  console.log('Component mounted');
+}, []);
+```
+
+
+
+> You can replace these placeholder images with actual screenshots of your components for a more attractive README.
+
+## 🧪 Available Scripts
+
+* `npm run dev` – Start the development server.
+* `npm run build` – Generate an optimized production build.
+* `npm run lint` – Run ESLint to check code quality.
+* `npm run preview` – Preview the production build.
+
+## 🤝 Contributing
+
+If you want to add examples with other hooks or improve the documentation:
+
+1. Fork the repository.
+2. Create a branch (`git checkout -b feature/new-hook`).
+3. Commit your changes and push your branch.
+4. Open a Pull Request.
+
+## 📄 License
+
+MIT
