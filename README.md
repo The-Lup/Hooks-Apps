@@ -9,6 +9,7 @@ This project contains simple applications built with **React**, **TypeScript**, 
 - `useState` – for local state management.
 - `useRef` – for referencing DOM elements and persistent values.
 - `useEffect` – for executing side effects when components mount, update, or unmount.
+- `useReducer` – for managing more complex state logic in a predictable way.
 
 ## 🚀 Technologies
 
@@ -17,6 +18,7 @@ This project contains simple applications built with **React**, **TypeScript**, 
 - **Vite**
 - **Tailwind CSS**
 - **ESLint**
+- **Shadcn/UI** – for prebuilt, accessible, and customizable UI components
 
 ## 🛠 Installation
 
@@ -25,22 +27,6 @@ git clone https://github.com/The-Lup/Hooks-Apps.git
 cd Hooks-Apps
 npm install
 npm run dev
-```
-
-## 📁 Project Structure
-
-```plaintext
-Hooks-Apps/
-├── public/
-├── src/
-│   ├── components/    # Reusable components
-│   ├── hooks/         # Custom hooks if any
-│   ├── App.tsx        # Main component
-│   └── main.tsx       # Entry point
-├── tailwind.config.js
-├── tsconfig.json
-├── vite.config.ts
-└── package.json
 ```
 
 ## 🎨 Hook Mini Demos
@@ -75,6 +61,20 @@ Example of an effect that runs when the component mounts:
 useEffect(() => {
   console.log('Component mounted');
 }, []);
+```
+
+### 4️⃣ useReducer
+
+Simple counter using `useReducer`:
+
+```tsx
+const [count, dispatch] = useReducer(
+  (state: number, action: { type: 'inc' | 'dec' }) =>
+    action.type === 'inc' ? state + 1 : state - 1,
+  0
+);
+
+<button onClick={() => dispatch({ type: 'inc' })}>Increment: {count}</button>;
 ```
 
 ## 🧪 Available Scripts
