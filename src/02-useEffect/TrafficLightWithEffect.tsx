@@ -30,7 +30,7 @@ export const TrafficLightWithEffect = () => {
         if (prev === 1) {
           const newLight = nextLight[light];
           setLight(newLight);
-          return durations[newLight]; // reinicia el countdown según el color
+          return durations[newLight];
         }
         return prev - 1;
       });
