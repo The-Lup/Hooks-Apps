@@ -13,7 +13,7 @@ This project contains simple applications built with **React**, **TypeScript**, 
 
 ## 🚀 Technologies
 
-- **React**
+- **React** – version 19.1.0
 - **TypeScript**
 - **Vite**
 - **Tailwind CSS**
