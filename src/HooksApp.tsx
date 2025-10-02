@@ -9,7 +9,7 @@ import { ScrambleWords } from './05-useReducer/ScrambleWords';
 
 function HooksApp() {
   return (
-    <BrowserRouter basename="Hooks-Apps">
+    <BrowserRouter basename="/Hooks-Apps">
       {/* 🔹 Navbar  Tailwind */}
       <nav className="bg-gray-800 text-white p-4 shadow-md">
         <ul className="flex flex-wrap gap-4">
