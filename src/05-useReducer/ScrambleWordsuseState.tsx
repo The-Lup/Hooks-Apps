@@ -46,10 +46,10 @@ export const ScrambleWords = () => {
   const [guess, setGuess] = useState('');
   const [points, setPoints] = useState(0);
   const [errorCounter, setErrorCounter] = useState(0);
-  const [maxAllowErrors, setMaxAllowErrors] = useState(3);
+  const [maxAllowErrors] = useState(3);
 
   const [skipCounter, setSkipCounter] = useState(0);
-  const [maxSkips, setMaxSkips] = useState(3);
+  const [maxSkips] = useState(3);
 
   const [isGameOver, setIsGameOver] = useState(false);
 

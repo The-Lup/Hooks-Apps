@@ -13,7 +13,7 @@ export const TrafficLight = () => {
   const [light, setLight] = useState<TrafficLightColor>('red');
 
   const handleColorChange = (color: TrafficLightColor) => {
-    setLight((prev) => {
+    setLight(() => {
       return color;
     });
   };
