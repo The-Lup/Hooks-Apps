@@ -1,6 +1,6 @@
 # Hooks-Apps
 
-Example repository for learning and practicing some React hooks. You can check all the hooksApps here: https://the-lup.github.io/Hooks-Apps/
+Example repository for learning and practicing some React hooks. Feel free to check all hooksApps here: https://the-lup.github.io/Hooks-Apps/
 
 ## 📦 Description
 
